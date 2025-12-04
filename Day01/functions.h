@@ -5,9 +5,5 @@
 #include <vector>
 
 using namespace std;
-
-bool isDigit(char c);
-int getNumber(string str);
-int getNumberStr(string str);
-
+    
 #endif

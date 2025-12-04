@@ -26,13 +26,3 @@ endif()
 add_executable(main main.cpp functions.cpp)
 set_target_properties(main PROPERTIES
   RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
-
-# Testing
-enable_testing()
-
-# Test executable
-add_executable(tests tests/test_main.cpp functions.cpp)
-target_link_libraries(tests gtest gtest_main)
-
-include(GoogleTest)
-gtest_discover_tests(tests)
