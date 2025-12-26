@@ -7,8 +7,7 @@
 
  ### Naloga 1
 
- Za prvo možnost vzamemo prvo polovico začetka območja (če je to mogoče) in prištevamo po ena dokler ne presežemo končne vrednosti območja.
-
+ Za prvo možnost vzamemo prvo polovico začetka območja (če je to mogoče) in prištevamo po ena. Te polovice združimo in pogledamo če je v območju. 
  ### Naloga 2
 
  Proviramo vse dolžine ponavljanja (teh je: start/2) in proviramo če so na danem bmočju (med start in end), zapišemo jih v unordered set, ker želimo neponavljajoče, nakoncu jih seštejemo.
@@ -25,7 +24,7 @@ Najdemo maksimalno vrednost od začetka do predzadnjega, zatem najdemo še od pr
 
 Podobno kot pri prvi le da začnemo iskanje do 11 predzadnje števke in potem od najdene do 10 predzadnje itd. do konca.
  
- ## Naloga 4
+ ## Day 04
 
 Začnemo z zapisom "skladišča" v vektor stringov (vrstic). Dodamo tudi "padding, (pike)" okoli celotnega skladišča da poenostavi zapis preverjanja.
 
@@ -36,3 +35,15 @@ Z for loop gremo čez vse pozicije v skladišču (izključujoče padding), če p
 ### Naloga 2
 
 Naredimo isto le da če jo lahko dostopa jo odstranimo ('@'->'.'). Ponavljamo dokler se število pobranih ne spreminja več.
+
+## Day 05
+
+Začeno z zapisom vseh danih območij v vektor parov, jih uredimo po velikosti začetne vrednosti območij. Nato naredimo nov vektor parov območij ki se ne prekrivajo (merged). To storimo z naslednjim algoritmom: Prvo območje prepišemo, če se naslednje območje prekriva ampak ne celo (začetek naslednjega < konec merged) zapišemo nov konec. Če se ne prekrivajo ga dodamo kot noo območje.
+
+### Naloga 1
+
+Če je podan id v katerem od (merged) območij prištejemo števec.
+
+### Naloga 2
+
+Vsi Id ki so še sveži je seštevek velikosti (merged)območij.
