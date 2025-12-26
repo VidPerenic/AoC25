@@ -5,9 +5,9 @@
 #include <unordered_set>
 #include <stdexcept>
 
-long long two_sequence_counter(std::string start, std::string end);
+unsigned long long two_sequence_counter(std::string start, std::string end);
    
-long long multi_sequence_counter(std::string start, std::string end);
+unsigned long long multi_sequence_counter(std::string start, std::string end);
 
 
 #endif

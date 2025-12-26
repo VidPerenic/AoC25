@@ -1,6 +1,6 @@
 #include "functions.h"
 
-long long two_sequence_counter(std::string start, std::string end){
+unsigned long long two_sequence_counter(std::string start, std::string end){
 
     if(start.size() == end.size() &&  start.size()%2 != 0) return 0;// vrne 0 če sta
     long id;
@@ -30,7 +30,7 @@ long long two_sequence_counter(std::string start, std::string end){
     return count;
 }
 
-long long multi_sequence_counter(std::string start, std::string end){
+unsigned long long multi_sequence_counter(std::string start, std::string end){
 
     if(start.size() != end.size()) {throw std::invalid_argument("Input string lenghts must be the same");}
 
