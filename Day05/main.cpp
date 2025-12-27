@@ -9,6 +9,11 @@ int main() {
   std::ifstream file("input.txt");
   std::string line;
 
+   if (!file.is_open()) {
+      std::cerr << "Could not open file.\n";
+      return 1;
+    }
+
   std::string first; //string ker ga zapišemo z getline
 
   long long spoil; 

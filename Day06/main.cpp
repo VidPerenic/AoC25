@@ -9,6 +9,11 @@ int main() {
   std::ifstream file("input.txt");
   std::string line;
 
+   if (!file.is_open()) {
+      std::cerr << "Could not open file.\n";
+      return 1;
+    }
+
   std::vector <std::string> lines_str;
   std::vector <std::vector<int>> lines(4); //
  
