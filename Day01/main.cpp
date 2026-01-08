@@ -13,6 +13,8 @@ int main() {
   std::ifstream file("input.txt");
   std::string line{};
 
+
+
   while(std::getline(file, line)){
     std::stringstream ss (line);
     ss >> direction >> rot;
@@ -21,6 +23,8 @@ int main() {
     if (direction == 'R'){
       poz += rot;
     counter2 += poz/100;} // če gremo u desno normalno prištejemo
+
+
     else {
       
       counter2 += (100 - poz + rot) / 100; // (100 - poz +rot) preslikava v prištevanje da ni treba it v minus 
